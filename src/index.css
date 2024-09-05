@@ -28,3 +28,8 @@ h2 {
 img {
   width: 100%;
 }
+
+nav {
+  display: flex;
+  gap: 1rem;
+}

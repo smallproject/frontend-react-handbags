@@ -1,6 +1,7 @@
 import './App.css'
 import ButtonItem from "./components/buttons/ButtonItem.jsx";
 import ProductItemTile from "./components/productItemTile/ProductItemTile.jsx";
+import ArticleStoryTile from "./components/articleStory/ArticleStoryTile.jsx";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           />
         </nav>
 
-        <nav className="nav-products">
+        <main className="nav-products">
             <ProductItemTile
                 imageUrl = "src/assets/bag_1.png"
                 title = "The handy bag"
@@ -50,11 +51,45 @@ function App() {
                 price = "€150,-"
                 tag = "New collection"
             />
-        </nav>
+        </main>
 
-        <div className="story-board">
+          <footer className="story-board">
+              <section>
+                  <ArticleStoryTile
+                      imageUrl="null"
+                      title="THE BRAND"
+                      paragraph="
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus assumenda autem consequatur enim eveniet facilis fugit magni officia praesentium, ratione soluta unde ut, veniam voluptate! Dolorem dolorum exercitationem ipsam iste, libero maiores nam odit rem rerum, sint sit soluta! Alias animi ipsam, odit repellendus saepe sapiente similique tenetur vel."
 
-        </div>
+                  />
+              </section>
+              <section>
+                  <h1>IMAGE</h1>
+                  <ArticleStoryTile
+                      imageUrl="src/assets/brand.png"
+                      imageAlt={"The brand image"}
+                  />
+              </section>
+
+              <section>
+                  <h1>IMAGE</h1>
+                  <ArticleStoryTile
+                      imageUrl="src/assets/our_story.png"
+                      imageAlt={"Our story image"}
+                  />
+              </section>
+              <section>
+                  <ArticleStoryTile
+                      imageUrl="null"
+                      title="OUR STORY"
+                      paragraph="
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus assumenda autem consequatur enim eveniet facilis fugit magni officia praesentium, ratione soluta unde ut, veniam voluptate! Dolorem dolorum exercitationem ipsam iste, libero maiores nam odit rem rerum, sint sit soluta! Alias animi ipsam, odit repellendus saepe sapiente similique tenetur vel."
+
+                  />
+              </section>
+
+
+          </footer>
       </>
   )
 }

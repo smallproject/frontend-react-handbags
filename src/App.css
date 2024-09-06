@@ -1,3 +1,6 @@
+body {
+  max-width: 1024px;
+}
 main {
   margin: 24px 0;
   display: flex;
@@ -6,6 +9,7 @@ main {
 
 nav {
   margin: 24px 0;
+  justify-content: center;
 }
 
 footer {
